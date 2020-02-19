@@ -1,10 +1,10 @@
 ---
 title: "Why Zwift group rides are AWESOME!"
-date: 2020-02-19T11:11:08Z
+date: 2019-10-24T21:00:00Z
 draft: false
 description: "Last night I joined the SAS sub 2.5 w/kg Club ride on Zwift."
 featured_image: "why-zwift-is-awesome.jpg"
-categories: ["News","Japan"]
+categories: ["Zwift"]
 ---
 
 Last night I joined the SAS sub 2.5 w/kg Club ride on Zwift.

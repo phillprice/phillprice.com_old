@@ -34,12 +34,13 @@
     <link rel="preconnect" href="//www.google-analytics.com" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Including the bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/styles.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/brand.min.css">
+
 	<!-- Including google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/brand.min.css">
 
 	<link rel="icon" href="{{ .Site.BaseURL }}favicon.png" type="image/x-icon">
 
@@ -47,10 +48,10 @@
 	<meta name="author" content="{{ $config.author }}">
 	<meta name="theme-color" content="#000000">
 
-	{{ if .RSSLink }}
+    {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-	{{ end }}
+    {{ end }}
 
 	{{ partial "seo_schema.html" . }}
 
