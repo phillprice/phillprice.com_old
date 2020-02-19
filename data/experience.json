@@ -1,0 +1,40 @@
+{
+    "title": "Experience",
+    "experience": [
+        {
+            "timeperiod": "2015-present",
+            "company": "Technical Lead<br>Disney",
+            "description": "Consumer Platform Engineering develops the data, API foundation, and tools that power all our consumer products, and delivers solutions that are highly scalable, secure, easy to use, and high-quality. This includes content management systems, distribution APIs, messaging systems, data ingest pipelines and personalization platforms.<p>I provide technical guidance and expertise in these and other parts of Disney enabling the product owners to focus on what they want to achieve by providing how to get there.<p>I have the privilege of working with developers across the globe and enjoy the ability to mentor junior and intern developers in their growth and their fresh perspective grows Disney."
+        },
+        {
+            "timeperiod": "2015-2016",
+            "company": "Senior Developer<br>IG Markets",
+            "description": "Boston Ivy is a company dedicated to making the web a simpler and safer place. We do this through our six generic top level domains (gTLDs). They are .forex, .spreadbetting, .markets, .trading, .cfd and .broker.<p>As a Senior Developer at Boston Ivy I've been responsible for recruiting a 'pod' of developers in our sister office in Krakow replacing a team of contractors in London.<p>Aside from the personnel changes I successfully implemented a set of processes that take a simple ad-hoc code operation to a single server to a cloud architecture with immutable containers hosting fully tested code with stops in place to halt any faults before they reach live service.<p>I've played an active part of developing features for the flagship sites for Boston Ivy: news.markets, reviews.spreadbetting get.trading and trade.forex. Whilst intimately code reviewing and mentoring the team of developers to get better code out of everyone (and learning a lot on the way!)"
+        },
+        {
+            "timeperiod": "2011-2016",
+            "company": "Technical lead<br>CSL Web",
+            "description": "Developed complex applications for clients worldwide that are simple and fast for users, yet powerful underneath. Often built with an API to extend and build apps in the future.<p>Mentored and managed a team of apprentice and junior developers who now lead projects, deliver work to clients and have customer facing skills to effectively communicate with them.<p>Proactively implemented a process of containerised infrastructure, continuous integration and deployment along with dependency package management. Achieved quicker, more resilient deployment through having a single source of truth.<p>Implemented Test Driven Development through Behat, Cucumber and Selenium testing. Generated more robust regression testing, reducing the incident count by 65%."
+        },
+        {
+            "timeperiod": "2011-2016",
+            "company": "Technical lead<br>IS Solutions PLC",
+            "description": "Developed complex applications for clients worldwide that are simple and fast for users, yet powerful underneath. Often built with an API to extend and build apps in the future.<p>Mentored and managed a team of apprentice and junior developers who now lead projects, deliver work to clients and have customer facing skills to effectively communicate with them.<p>Proactively implemented a process of containerised infrastructure, continuous integration and deployment along with dependency package management. Achieved quicker, more resilient deployment through having a single source of truth.<p>Implemented Test Driven Development through Behat, Cucumber and Selenium testing. Generated more robust regression testing, reducing the incident count by 65%."
+        },
+        {
+            "timeperiod": "2007-2011",
+            "company": "PwC",
+            "description": "Documentum upgrade project Team Leader on the Documentum Upgrade Project, responsible for:<ul> <li>Designing the architecture for the new Documentum 6.5 environment. <li>Building the Load balanced resilient and performant WCM system of Documentum Content Server, WebPublisher, and Interactive Delivery Services on a MS SQL Server 2005 backend. <li>Documenting the process to enable semi-scripted installation of the environment and additional Content Servers. <li>Performing User Acceptance, Integration and System testing, as well as build and deployment of DAR files for the skeleton system (object types, attributes, life cycles, workflow, security etc.). <li>Migration of content from the pre-existing D5.3 system with an Oracle backend to the new D6.5 system with SQL Server backend using Crown Buldoser ETL software."
+        },
+        {
+            "timeperiod": "2005-2007",
+            "company": "LogicaCMG",
+            "description": "Responsible to Tube Lines CIO as leader of three contract developers in maintenance, support and development of WCM and ECM systems, including business analysis through to testing and deployment of on schedule and on budget code as well as user, group, attribute, type and workflow."
+        },
+        {
+            "timeperiod": "2003-2004",
+            "company": "De Beers",
+            "description": "Successful completion of Sightholders Extranet on-time and on-budget where diamonds firms procure cut diamonds. $4bn/year turnover moved from protracted face-to-face meetings to instantly available online.<p>On-schedule and on-plan delivery of Classic ASP/SQL Server eTravel system for end users to book travel through a self-service portal.<p>Intranet development and maintenance using Interwoven TeamSite for templated content management using XML and Perl CGI."
+        }
+    ]
+}
