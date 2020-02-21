@@ -1,4 +1,4 @@
-baseURL = "http://www.phillprice.com/"
+baseURL = "https://www.phillprice.com/"
 languageCode = "en-us"
 title = "Phill Price"
 theme = "uilite"
