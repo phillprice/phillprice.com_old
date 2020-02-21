@@ -11,7 +11,7 @@
     <div class="social my-4">
 
       {{ range $key, $value := $social }}
-        <a target="_blank" href="{{ $value }}">
+        <a target="_blank" href="{{ $value }}" aria-label="Social Link for {{ $key }}">
           <i class="{{ $key }}"></i>
         </a>
       {{ end }}

@@ -9,28 +9,29 @@
         <article class="mb-5">
           <div class="row">
             <div class="col-12 col-lg-4 col-sm-12 col-md-5">
+
                 {{ if .Params.featured_image }}
                   <!-- <img class="my-4 rounded" src="{{.Site.BaseURL}}images/blog/{{ .Params.featured_image }}" alt=""> -->
-                  <div class="featuredImage rounded" style="background-size:cover;background-position:center;background-image: url('{{.Site.BaseURL}}images/blog/{{ .Params.featured_image }}'); height: 200px;background-color:#fbfbfb;">   
+                  <div class="featuredImage rounded" style="background-size:cover;background-position:center;background-image: url('{{.Site.BaseURL}}images/blog/{{ .Params.featured_image }}'); height: 200px;background-color:#fbfbfb;">
                   </div>
-                  {{ end }}
+                {{ end }}
             </div>
             <div class="col-12 col-lg-8 col-sm-12 col-md-7">
               <small class="text-muted">{{.Date.Format "Jan 2, 2006"}}</small>
             <h2 class="heading mb-0"><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h2>
             <small class="text-muted" style="text-transform:uppercase">{{ if .Params.categories }}
-                <span>        
+                <span>
                   {{ range .Params.categories }}
                     <span class="badge badge-light">{{ title . }}</span>
-                  {{ end }} 
-                  
+                  {{ end }}
+
 
                 </span>
                 {{ end }}
               </small>
-            
+
             <p>{{ .Description }} <a class="text-muted d-inline" href="{{.Permalink}}">Read More...</a></p>
-            
+
             </div>
           </div>
         </article>
@@ -61,7 +62,7 @@
 {{ if gt $paginator.TotalPages 1 }}
   <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
-    
+
     <!-- First page. -->
     {{ if ne $paginator.PageNumber 1 }}
     <li class="page-item">
@@ -79,13 +80,13 @@
       </a>
     </li>
     {{ end }}
-  
+
     <!-- Page numbers. -->
     {{ range $paginator.Pagers }}
-    
+
       {{ $.Scratch.Set "page_number_flag" false }}
 
-      
+
       <!-- Advanced page numbers. -->
       {{ if gt $paginator.TotalPages $max_links }}
 
@@ -112,14 +113,14 @@
 
         <!-- Middle pages. -->
         {{ else }}
-          
+
           {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
             {{ $.Scratch.Set "page_number_flag" true }}
           {{ end }}
 
         {{ end }}
 
-      
+
       <!-- Simple page numbers. -->
       {{ else }}
 
