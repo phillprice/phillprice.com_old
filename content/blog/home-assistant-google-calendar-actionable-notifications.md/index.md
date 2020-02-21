@@ -5,6 +5,8 @@ draft: false
 description: "HOw I get notified its time to take out the bins."
 featured_image: "bin-notifications.png"
 categories: ["Home Assistant"]
+aliases:
+    - /blog/home-assistant-google-calendar-actionable-notifications/index.php
 ---
 
 I was toying with how to remind myself to put the right bin out at the right time. Although its generally the same schedule every week, I would still occasionally forget.
@@ -238,7 +240,7 @@ Now all that’s needed is a second trigger on the day in case i just ignore the
     service: script.turn_on
   id: d6581bd23a8e4c01a60428b84cdb7986
 ```
-How can this be improved? Well it would be nice to automate the bins_out boolean by possibly using beacon locations or machine learning camera images but the bins get moved around. I worry the beacons woudl get knocked off or the bins swapped.
+How can this be improved? Well it would be nice to automate the bins_out boolean by possibly using beacon locations or machine learning camera images but the bins get moved around. I worry the beacons would get knocked off or the bins swapped.
 
 Any other improvement ideas? Steps I’ve missed? Shout!
 

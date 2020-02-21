@@ -5,6 +5,8 @@ draft: false
 description: "Last night I joined the SAS sub 2.5 w/kg Club ride on Zwift."
 featured_image: "why-zwift-is-awesome.jpg"
 categories: ["Zwift"]
+aliases:
+    - /blog/why-zwift-group-rides-are-awesome/index.php
 ---
 
 Last night I joined the SAS sub 2.5 w/kg Club ride on Zwift.
