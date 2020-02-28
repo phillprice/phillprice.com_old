@@ -3,7 +3,7 @@
 {{ $social := .Site.Data.social }}
 {{ $baseURL := .Site.BaseURL }}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white mt-lg-0 mt-3" style="position:relative">
+<nav class="navbar navbar-expand-lg navbar-light bg-white mt-lg-0 mt-3 fixed-top" >
 	<a id="menuBar" href="#0" class="bg-white" style="cursor: pointer; position: absolute; height: 22px; width: 30px;">
 		<div class="hamburger-menu"></div>
 	</a>
@@ -19,14 +19,15 @@
 	<span class="mr-auto primaryMenu active">
 		<a class="navbar-brand ml-auto" href="{{ .Site.BaseURL }}">
 				<img style="width:40px" src="{{.Site.BaseURL}}/images/{{ $basicInfo.displayPicture }}" alt="" class="rounded-circle mr-2">
-				<span style="font-size: 20px" class="heading">{{ $basicInfo.highlightedText }}</span>
+				<span style="font-size: 20px" class="heading"><img style="height:40px" src="{{.Site.BaseURL}}/images/phillprice.png" alt=""
+                    class="mr-2"></span>
 			</a>
 	</span>
 	<div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-			
+
 			</ul>
-			
+
 			{{ range $key, $value := $social }}
 				<a target="_blank" class="nav-link text-dark" href="{{ $value }}">
 					<i class="{{ $key }}"></i>

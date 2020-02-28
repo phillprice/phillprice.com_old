@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" . }}
 
-<section class="pt-5 pb-0">
+<section class="pt-5 pb-0" style="margin-top:3rem;">
   <div class="container">
     <!-- Renders the li.html content view for each content/post/*.md -->
     {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}

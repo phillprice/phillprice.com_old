@@ -1,4 +1,5 @@
 baseURL = "https://www.phillprice.com/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "Phill Price"
 theme = "uilite"
+enableEmoji = true

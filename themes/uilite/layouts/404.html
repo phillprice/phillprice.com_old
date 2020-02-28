@@ -1,1 +1,52 @@
-<h1>simple 404 error page</h1>
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<div class="container mt-4" style="margin-top:5rem !important;">
+    <h1 class="text-center heading">404 Missing!</h1>
+    <h2 class="text-center heading">Recent Posts:</h2>
+</div>
+
+<img src="{{ .Site.BaseURL }}/images/blog/{{ .Params.featured_image }}" class="mx-auto d-block my-4"
+    style="max-width:100%;width:800px" alt="">
+
+<article style="max-width:890px" class="container w-100 my-5">
+
+{{ $paginator := .Paginate (where (where .Site.Pages "Section" "blog") ".Title" "!=" "Blogs" ) }}
+    {{ range $paginator.Pages }}
+        <article class="mb-5">
+          <div class="row">
+            <div class="col-12 col-lg-4 col-sm-12 col-md-5">
+
+                {{ with .Resources.ByType "image" }}
+                    {{ range first 1 . }}
+                    {{ $scaled := .Resize "x400 q90" }}
+                        <div class="featuredImage rounded" style="background-size:cover;background-position:center;background-image: url('{{ $scaled.Permalink }}'); height: 200px;background-color:#fbfbfb;">
+                        </div>
+                    {{ end }}
+                {{ end }}
+
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-7">
+              <small class="text-muted">{{.Date.Format "Jan 2, 2006"}}</small>
+            <h2 class="heading mb-0"><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h2>
+            <small class="text-muted" style="text-transform:uppercase">{{ if .Params.categories }}
+                <span>
+                  {{ range .Params.categories }}
+                    <span class="badge badge-light">{{ title . }}</span>
+                  {{ end }}
+
+
+                </span>
+                {{ end }}
+              </small>
+
+            <p>{{ .Description }} <a class="text-muted d-inline" href="{{.Permalink}}">Read More...</a></p>
+
+            </div>
+          </div>
+        </article>
+    {{ end }}
+</article>
+
+{{ partial "footer.html" . }}
+{{ partial "footer-scripts.html" . }}

@@ -4,7 +4,6 @@
     <div class="row">
         <div class="col-md-8">
             <h1 class="text-center heading">{{ .Title }}</h1>
-            <small class="text-center d-block text-muted">Posted on {{.Date.Format "Jan 2, 2006"}}</small>
             {{ with .Resources.ByType "image" }}
             {{ range first 1 . }}
             {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
@@ -72,42 +71,7 @@
                 {{ partial "share.html" . }}
 
                 {{ partial "disqus.html" . }}
-                <div class="row">
-                {{ range first 2 (where (where (where .Site.Pages "Section" "blog") ".Title" "!=" "Blogs" ) ".Title" "!=" .Title )}}
-                <div class="col-md-6">
-                    <a class="mb-3" href="{{ .Permalink }}">
-                        {{ with .Resources.ByType "image" }}
-                        {{ range first 1 . }}
-                        {{ $scaled := .Resize "x400 q90" }}
-                        <div class="featuredImage rounded"
-                            style="background-size:cover;background-position:center;background-image: url('{{ $scaled.Permalink }}'); height: 200px;background-color:#fbfbfb;">
-                        </div>
 
-                        {{ end }}
-                        {{ end }}
-
-                        <div style="text-align: center;">
-
-                            <img style="margin: 1px 0 1px 0 ;" src="">
-                        </div>
-                    </a>
-                    <small class="text-muted">{{ .Date.Format "Jan 2, 2006"}}</small>
-                    <a href="{{ .Permalink }}">
-                        <h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3>
-                    </a>
-
-                    <div>
-                        {{ range .Params.categories }}
-                        <span class="badge badge-light">{{ title . }}</span>
-                        {{ end }}
-
-                        <div class="float-right">
-
-                        </div>
-                    </div>
-                </div>
-                {{ end }}
-            </div>
             </article>
         </div>
         <div class="col-md-4">
