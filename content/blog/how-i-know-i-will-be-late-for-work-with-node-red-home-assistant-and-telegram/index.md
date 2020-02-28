@@ -148,6 +148,8 @@ We'll need the [dual guage card](https://github.com/custom-cards/dual-gauge-card
 Then add this view:
 {{< gist phillprice 47f3945ff9bdc300624f4dcd6aa43df6 "lovelace.yaml" >}}
 
+You'll notice there are tolerances throughout the dual gauges, for some reason lovelace copied them around and I'm scared to remove them, it means there's a lot of places to update if you want to change tolerances., sorry!
+
 
 ## TLDR; Things we'll need to change
 So, in summary, this is all of the detail we'll need to change, I think, to get this working:
@@ -162,6 +164,12 @@ So, in summary, this is all of the detail we'll need to change, I think, to get 
 ## Extra Trains
 {{< srcset src="myflow.png" title="Notifications">}}
 In my real life I change trains and I therefore I have four, not two, of everything. I also have another set of a different route for my wife setup. You can see above that its a lot of nodes, but it is not huge effort.
+
+You'll also see at the stat of my part 2 I have extra booleans in place to test if the following are true and bailing out from sending delay notifications (but still store it as state in Home Assistant)
+* if its a workday
+* if I've not set myself as driving to work
+* if I've set myself as Working From Home
+* if I'm still asleep
 
 ## Caveat
 It goes without saying that this all goes fine until the data isn't correct. During the write up of this guide I turned up and there were no trains but the train company didn't update the service status and the TransportApi was happily telling me everything was fine because that's what they were being told. Its a rarity though.
