@@ -6,6 +6,7 @@ description: "How I get notified its time to take out the bins."
 categories: ["Home Assistant"]
 aliases:
     - /blog/home-assistant-google-calendar-actionable-notifications/index.php
+    - /blog/home-assistant-google-calendar-actionable-notifications.md/
 ---
 
 I was toying with how to remind myself to put the right bin out at the right time. Although its generally the same schedule every week, I would still occasionally forget.
