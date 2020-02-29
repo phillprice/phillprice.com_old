@@ -172,4 +172,4 @@ You'll also see at the stat of my part 2 I have extra booleans in place to test 
 * if I'm still asleep
 
 ## Caveat
-It goes without saying that this all goes fine until the data isn't correct. During the write up of this guide I turned up and there were no trains but the train company didn't update the service status and the TransportApi was happily telling me everything was fine because that's what they were being told. Its a rarity though.
+This all goes fine until the data isn't correct. During the write up of this guide I turned up and there were no trains but the train company didn't update the service status and the TransportApi was happily telling me everything was fine because that's what they were being told. Its a rarity though.

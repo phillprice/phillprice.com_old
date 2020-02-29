@@ -1,12 +1,13 @@
 {{ $sidebar := .Site.Data.sidebar }}
 <meta itemprop="name" content="{{ .Title }}">
-<meta itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else if $sidebar.description }}{{ $sidebar.description | plainify }}{{ end }}">
-<meta name="og:title" content="{{ .Title }}">
-<meta name="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else if $sidebar.description }}{{ $sidebar.description | plainify }}{{ end }}">
-<meta name="og:type" content="article">
+<meta name="description" itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else if $sidebar.description }}{{ $sidebar.description | plainify }}{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else if $sidebar.description }}{{ $sidebar.description | plainify }}{{ end }}">
+<meta property="og:type" content="article">
 {{ $base :=  .Site.BaseURL  }}
 {{ $section := .Section }}
-{{ with .Params.featured_image }}
+{{ with .Resources.ByType "image" }}
+{{ range first 1 . }}
 {{ if eq $section "blog" }}
 <meta property="og:image" content="{{ $base }}images/blog/{{ . }}" />
 <meta name="twitter:image" content="{{ $base }}images/blog/{{ . }}">
@@ -14,6 +15,7 @@
 {{ if eq $section "work" }}
 <meta property="og:image" content="{{ $base }}images/work/{{ . }}" />
 <meta name="twitter:image" content="{{ $base }}images/work/{{ . }}">
+{{ end }}
 {{ end }}
 {{ end }}
 
