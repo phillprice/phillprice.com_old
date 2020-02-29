@@ -5,13 +5,13 @@
 
     <img src="{{.Site.BaseURL}}/images/{{ $sidebar.displayPicture }}" class="rounded-circle mb-3" alt="{{ $sidebar.highlightedText }} photo" width="160px">
 
-    <h1 class="heading">{{ $sidebar.title }} <span class="highlight">{{ $sidebar.highlightedText }}</span></h1>
+    <h1 class="heading bs"> <img src="http://localhost:1313//images/phillprice.png"></h1>
     <p class="text-muted">{{ $sidebar.description | safeHTML }}</p>
 
     <div class="social my-4">
 
       {{ range $key, $value := $social }}
-        <a target="_blank" href="{{ $value }}" aria-label="Social Link for {{ $key }}">
+        <a rel="noopener" target="_blank" href="{{ $value }}" aria-label="Social Link for {{ $key }}">
           <i class="{{ $key }}"></i>
         </a>
       {{ end }}

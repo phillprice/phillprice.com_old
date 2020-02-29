@@ -221,7 +221,7 @@ section.orange {
 }
 
 section.green {
-  background-color: #FD012F;
+  background-color: #ededed;
 }
 
 section.skin {
@@ -470,4 +470,27 @@ blockquote {
 }
 h1 span.bs {
     font-style: italic;
-    padding: 0 1.5rem 0 0.8rem;}
+    padding: 0 1.5rem 0 0.8rem;
+}
+h1.bs {
+    margin: 0.5rem 0 1rem 0;
+}
+h1.bs img {
+
+        opacity: 1;
+        height: 47px;
+        margin-top: -0.5rem;
+
+}
+.text-muted a.bs {
+    color: black;
+    font-style: italic ;
+    text-transform: uppercase;
+}
+a.btn.btn-dark.btn-lg.bs {
+    background-color: #FD012F;
+    border-color: #FD012F;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}

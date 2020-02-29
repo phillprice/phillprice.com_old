@@ -29,7 +29,7 @@
 			</ul>
 
 			{{ range $key, $value := $social }}
-				<a target="_blank" class="nav-link text-dark" href="{{ $value }}">
+				<a rel="noopener" target="_blank" class="nav-link text-dark" href="{{ $value }}">
 					<i class="{{ $key }}"></i>
 				</a>
 			{{ end }}
