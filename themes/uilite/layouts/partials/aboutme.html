@@ -1,0 +1,13 @@
+{{ $introblocks := .Site.Data.aboutme }}
+
+<section class="bg-light">
+  <h2 class="heading text-center">{{ $introblocks.title }}</h2>
+  <div class="row justify-content-md-center text-center">
+
+    <div class="col-12">
+     {{ range $index, $element := $introblocks.introblocks }}
+      <p class="text-muted">{{ $element.description | safeHTML }}</p>
+     {{ end }}
+   </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+{
+    "title": "About Me",
+    "introblocks": [
+        {
+            "description": "I develop and deploy web applications that create value for the client and the end user. I've built enterprise content management systems for the big four and eCommerce stores for BBC apprentice finalists to corporate intranets for public services."
+        },
+        {
+            "description": "I build and consume APIs including payment gateways and email delivery and give back through committing work to open source projects, and their documentation. I believe in TDD/BDD and continuous deployment, in code control and DevOps methodologies."
+        },
+        {
+            "description": "I've got 13 years commercial experience working for flourishing startups, small companies, technical consultancy, public and private firms and established multinationals both internally and managing clients work."
+        },
+        {
+            "description": "I'm full stack from building Unix/windows servers (often with repeatable tools); configuring and deploying LAMP/LEMP/IIS services; building the underlying system models, taxonomy and customisations in XML, XSLT, Perl, PHP, MySQL, PostgreSQL and SQL Server; and the final sites in HTML, CSS, LESS/SASS, Javascript, and jQuery."
+        },
+        {
+            "description": "I am not currently looking for permanent or contract work. Thank you."
+        }
+    ]
+}
