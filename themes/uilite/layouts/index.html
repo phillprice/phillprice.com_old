@@ -14,9 +14,4 @@
 	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}{{ partial "work.html" . }}{{ end }}
 </div>
 
-<div class="main-content">
-	<div class="emp"></div>
-	{{ partial "contact.html" . }}
-</div>
-
 {{ partial "footer-scripts.html" . }}
