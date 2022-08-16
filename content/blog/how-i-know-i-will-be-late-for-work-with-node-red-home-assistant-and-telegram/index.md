@@ -1,7 +1,7 @@
 ---
 title: "How I know I'll be late with NodeRed and Home Assistant"
 date: 2020-02-24T19:00:00Z
-draft: false
+draft: true
 categories: ["Home Assistant"]
 ---
 
